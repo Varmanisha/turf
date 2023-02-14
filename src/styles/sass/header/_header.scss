@@ -1,0 +1,60 @@
+// top-header
+
+header {
+    background-color: $white-color;
+
+    nav {
+        padding: 25px 0;
+        border-bottom: 1px solid #e5e5e5e5;
+
+        .navbar-brand {
+            img {
+                width: 100%;
+                max-width: 180px;
+            }
+        }
+
+        .navbar-collapse {
+            ul {
+                display: flex;
+                justify-content: flex-end;
+                column-gap: 20px;
+
+                li {
+                    position: relative;
+                    display: flex;
+                    column-gap: 5px;
+
+                    a {
+                        text-transform: uppercase;
+                        font-weight: 500;
+                        color: $black-color;
+                        display: flex;
+                        align-items: center;
+                        transition: all 0.5s;
+
+                        svg {
+                            width: 15px;
+                            margin-right: 10px;
+                            transition: all 0.5s;
+                        }
+                    }
+
+                    &:hover {
+                        a {
+                            color: $main-color;
+
+                            svg {
+                                fill: $main-color;
+                            }
+
+                            &::after {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
