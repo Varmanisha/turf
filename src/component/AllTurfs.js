@@ -15,6 +15,7 @@ const AllTurfs = () => {
 
     const handleClear = () => {
         setClear(value)
+        console.log("testing")
     }
     const handleInput = (e) => {
         setValue(e.target.value);
